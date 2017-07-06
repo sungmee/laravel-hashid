@@ -38,7 +38,7 @@ return [
 
 ## 使用示例:
 ```PHP
-use Sungmee\Hashid\Hashid;
+use Sungmee\Hashid\Facades\Hashid;
 
 $id   = 123;
 
