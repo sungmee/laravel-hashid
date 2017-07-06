@@ -78,6 +78,11 @@ class Hashid
      */
     public function hash($ids)
     {
+        if(!is_int($ids))
+        {
+            return false;
+        }
+
         $hash       = '';
         $ids_length = strlen($ids);
         $first      = substr($this->flag, $ids_length - 1, 1);
@@ -126,7 +131,7 @@ class Hashid
             }
         }
 
-        return $ids;
+        return ctype_digit($ids) ? (int) $ids : false;
     }
 
     /**
