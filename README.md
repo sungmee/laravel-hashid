@@ -42,6 +42,6 @@ use Sungmee\Hashid\Facades\Hashid;
 
 $id   = 123;
 
-$hash = Hashid::hash($id);
-$id   = Hashid::id($hash);
+$hash = Hashid::hash($id); // 2LtLgHkF
+$id   = Hashid::id($hash); // 123
 ```
