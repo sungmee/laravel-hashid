@@ -117,6 +117,11 @@ class Hashid
      */
     public function id($hash)
     {
+        if(empty($hash))
+        {
+            return false;
+        }
+
         $ids       = '';
         $first     = substr($hash, 0, 1);
         $length    = strpos($this->flag, $first);
