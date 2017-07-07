@@ -80,7 +80,7 @@ class Hashid
     {
         if(!is_int($ids))
         {
-            return false;
+            return null;
         }
 
         $hash       = '';
@@ -119,7 +119,7 @@ class Hashid
     {
         if(empty($hash))
         {
-            return false;
+            return null;
         }
 
         $ids       = '';
@@ -136,7 +136,7 @@ class Hashid
             }
         }
 
-        return ctype_digit($ids) ? (int) $ids : false;
+        return ctype_digit($ids) ? (int) $ids : null;
     }
 
     /**
