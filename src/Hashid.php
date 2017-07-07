@@ -78,7 +78,7 @@ class Hashid
      */
     public function hash($ids)
     {
-        if(!is_int($ids))
+        if(!isset($ids) || !is_int($ids))
         {
             return null;
         }
@@ -117,7 +117,7 @@ class Hashid
      */
     public function id($hash)
     {
-        if(empty($hash))
+        if(!isset($hash) || empty($hash))
         {
             return null;
         }
