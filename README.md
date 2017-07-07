@@ -1,6 +1,6 @@
 # LARAVEL HASHID
 
-为 Laravel 量身定制的类似 Youtube 上的 ID（数字）加密解密扩展包。
+为 Laravel 量身定制的类似 Youtube 上的 ID（数字）加密解密扩展包。【不使用 bcpow() 函数】
 
 ## 配置扩展包
 
