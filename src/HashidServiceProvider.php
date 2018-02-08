@@ -18,7 +18,7 @@ class HashidServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->mergeConfigFrom(__DIR__.'/../config/hashid.php', 'hashid');
     }
 
     /**

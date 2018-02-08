@@ -59,7 +59,7 @@ class Hashid
      */
     public function __construct()
     {
-        $config             = config('sungmee.hashid');
+        $config             = config('hashid');
         $this->length       = $config ? $config['length'] : 8;
         $this->salt         = $config ? $config['salt'] : 3.14159265359;
         $this->dictionary   = $config ? $config['dictionary']

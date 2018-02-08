@@ -1,6 +1,7 @@
 {
     "name": "sungmee/laravel-hashid",
     "description": "为 Laravel 量身定制的类似 Youtube 上的 ID（数字）加密解密扩展包。",
+    "version": "0.1.0",
     "keywords": ["packages", "laravel", "hash"],
     "type": "library",
     "license": "MIT",
@@ -18,7 +19,6 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.6.4",
         "illuminate/support": ">=4.0"
@@ -26,6 +26,18 @@
     "autoload": {
         "psr-4": {
             "Sungmee\\Hashid\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sungmee\\Hashid\\HashidServiceProvider"
+            ],
+            "aliases": {
+                "Fx": "Sungmee\\Hashid\\Facades\\Hashid"
+            }
         }
     }
 }
